@@ -1,4 +1,4 @@
-function testReview() { console.log('This is a test for PR review'); }
+function simpleTestReview() { console.log('This is a test for PR review'); }
 
 function testReview(input) {
   if (input) {
