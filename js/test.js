@@ -1,9 +1,9 @@
 function simpleTestReview() { console.log('This is a test for PR review'); }
 
 function testReview(input) {
-  if (input) {
+  if (typeof input === 'string' && input.length > 0) {
     console.log('Test passed with input: ' + input);
   } else {
-    console.log('Test failed: No input');
+    console.log('Test failed: Input must be a non-empty string');
   }
 }
