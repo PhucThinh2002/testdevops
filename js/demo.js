@@ -1,2 +1,11 @@
-function add(a, b) { return a + b; }
-test('adds 1 + 2 to equal 3', () => { expect(add(1, 2)).toBe(3); });
+const { createServer } = require('http');
+
+const server = createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello from Docker!\n');
+});
+
+server.listen(3000, () => {
+  console.log('Server running on port 3000');
+});

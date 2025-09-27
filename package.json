@@ -1,4 +1,5 @@
 {
+    "type": "module",
     "scripts": {
         "demo": "jest",
         "test": "echo 'Test passed' && exit 0"
